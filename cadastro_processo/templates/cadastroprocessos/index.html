@@ -1,13 +1,16 @@
+{%load static %}
 <html>
   <head>
     <meta charset="utf-8">
     <title>Cadastro de Processos</title>
+    <link rel="stylesheet" href="{% static 'css/processos.css' %}">
   </head>
   <body>
     <h1>Cadastrar Processos</h1>
     <form enctype="multipart/form-data" action="" method="POST">
         {% csrf_token %}
         {{ form }}
+        <br>
       <input type="submit" value="Salvar">
     </form>
   </body>

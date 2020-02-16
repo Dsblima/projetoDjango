@@ -7,8 +7,6 @@ from django.views.generic import TemplateView
 urlpatterns = [
     
     path('',views.paginaInicial),
-    path('lista',views.listaProcessos),
-    path('css',views.testeCss),
-    
+    path('lista',views.listaProcessos),        
     # path('^$',TemplateView.as_view(template_name='index.html'))
 ]
