@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Processos</title>
+  </head>
+  <body>
+    {% block title %}Todos os Processos{% endblock %}
+      <h1>Todos os Processos</h1>
+      {% block content %}
+      
+      <table>
+        <tr>
+          <th>COMARCA</th>
+          <th>PASTA</th>
+          <th>UF</th>
+        </tr>
+        {% for processo in listaDeProcessos %}
+            
+            <tr>
+              <td>{{processo.comarca}}</td>
+              <td>{{processo.pasta}}</td>
+              <td>{{processo.uf}}</td>
+            </tr>
+            {% endfor %}
+      </table>
+      
+      {% endblock %}
+      
+  </body>
+</html>

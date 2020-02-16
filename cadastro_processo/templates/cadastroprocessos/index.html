@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cadastro de Processos</title>
+  </head>
+  <body>
+    <h1>Cadastrar Processos</h1>
+    <form enctype="multipart/form-data" action="" method="POST">
+        {% csrf_token %}
+        {{ form }}
+      <input type="submit" value="Salvar">
+    </form>
+  </body>
+</html>
